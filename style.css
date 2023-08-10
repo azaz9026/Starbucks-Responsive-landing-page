@@ -1,0 +1,189 @@
+
+  @import url('https://fonts.googleapis.com/css2?family=Comfortaa&family=Fasthand&family=Hind:wght@700&family=Kanit:wght@200&family=Martian+Mono&family=Merriweather+Sans:wght@500&family=Montserrat:wght@500&family=Poppins:wght@300&family=Raleway:wght@400;500;700&family=Russo+One&family=Source+Code+Pro:wght@500&family=Tilt+Prism&family=Ubuntu&display=swap');
+
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Comfortaa', cursive;
+    font-family: 'Fasthand', cursive;
+    font-family: 'Hind', sans-serif;
+    font-family: 'Kanit', sans-serif;
+    font-family: 'Martian Mono', monospace;
+    font-family: 'Merriweather Sans', sans-serif;
+    font-family: 'Montserrat', sans-serif;
+    font-family: 'Poppins', sans-serif;
+    font-family: 'Raleway', sans-serif;
+    font-family: 'Russo One', sans-serif;
+    font-family: 'Source Code Pro', monospace;
+    font-family: 'Tilt Prism', cursive;
+    font-family: 'Ubuntu', sans-serif;
+}
+
+section{
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    padding: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #fff;
+}
+
+header{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 20px 100px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+header .logo{
+    position: relative;
+    max-width: 80px;
+}
+
+header ul{
+    position: relative;
+    display: flex;
+}
+
+header ul li{
+    list-style: none;
+}
+
+header ul li a{
+    display: inline-block;
+    text-decoration: none;
+    color: #333;
+    font-weight: 400;
+    margin-left: 40px;
+    font-size: 22px;
+}
+
+.content{
+    position: relative;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.content .textbox{
+    position: relative;
+    max-width: 800px;
+}
+
+.content .textbox h1{
+    font-size: 5em;
+    color: #333;
+    line-height: 1.4em;
+    font-weight: 500;
+}
+
+.content .textbox h1 span{
+    color: #017143;
+    font-size: 1.5em;
+    font-weight: 900;
+}
+
+.content .textbox p{
+    margin-top: 2vw;
+    font-size: 18px;
+    color: #333;
+    font-weight: 500;
+    margin-bottom: 20px;
+}
+
+.content .textbox a{
+    display: inline-block;
+    margin-top: 30px ;
+    padding: 20px 30px;
+    color: #fff;
+    background-color: #017143;
+    border-radius: 50px;
+    letter-spacing: 1px;
+    text-decoration: none;
+    font-size: 1.2vw;
+}
+
+
+.content .imgbox{
+    width: 600px;
+    display: flex;
+    justify-content: flex-end;
+    margin-top: 50px;
+    padding-right: 100px;
+}
+
+.content .imgbox img{
+    width: 100%;
+}
+
+.thumb1{
+    position: absolute;
+    left: 50%;
+    bottom: 10%;
+    transform: translateX(-50%);
+    display: flex;
+}
+
+.thumb1 li{
+    list-style: none;
+    display: inline-block;
+    margin: 0 20px;
+    cursor: pointer;
+    transition: 0.5s;
+}
+
+.thumb1 li:hover{
+    transform: translatey(-15px);
+}
+
+.thumb1 li img{
+    max-width: 80px;
+}
+
+.sci{
+    position: absolute;
+    top: 50%;
+    right: 30px;
+    transform: translateY(-50%);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.sci li{
+    list-style: none;
+}
+
+.sci li a img{
+   text-decoration: none;
+   margin: 8px 0;
+   padding: 8px;
+   cursor: pointer;
+   transition: 0.5s;
+   filter: invert(1);
+}
+
+.sci li a img:hover{
+    transform: translateX(-15px);
+}
+
+.circle{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #017143;
+    clip-path: circle(800px at right 1000px);
+}

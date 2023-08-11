@@ -1,4 +1,5 @@
 
+
   @import url('https://fonts.googleapis.com/css2?family=Comfortaa&family=Fasthand&family=Hind:wght@700&family=Kanit:wght@200&family=Martian+Mono&family=Merriweather+Sans:wght@500&family=Montserrat:wght@500&family=Poppins:wght@300&family=Raleway:wght@400;500;700&family=Russo+One&family=Source+Code+Pro:wght@500&family=Tilt+Prism&family=Ubuntu&display=swap');
 
 
@@ -186,4 +187,159 @@ header ul li a{
     height: 100%;
     background-color: #017143;
     clip-path: circle(800px at right 1000px);
+}
+
+@media (max-width:600px) {
+
+   
+        
+    .content{
+        flex-direction: column;
+        margin-top: 100px;
+    }
+
+    header ul {
+        display: none;
+    }
+
+    header{
+        padding: 30px 20px;
+    }
+    header .logo{
+        max-width: 40px;
+    }
+
+    header .logo img{
+        width: 80px;
+    }
+
+    .toggle{
+        position: relative;
+        width: 30px ;
+        height: 30px;
+        cursor: pointer;
+        background: url(images/menu.png);
+        background-position:center;
+        background-repeat: no-repeat;
+        background-size: 30px;
+        filter: invert(1);
+        margin-left: 300px;
+        justify-content: right;
+        z-index: 11;
+    }
+
+    .toggle.active{
+        background: url(images/close.png);
+        background-position:center;
+        background-repeat: no-repeat;
+        background-size: 30px;
+       
+    }
+
+    header ul.nav.active{
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        background-color: #fff;
+        color: #017143;
+        z-index: 10;
+    }
+
+    header ul li a{
+        padding: 20px;
+        font-size: 5vw;
+        font-weight: 600;
+        color: #017143;
+    }
+
+    header ul li a:hover{
+        font-size: 5.5vw;
+        color: crimson;
+    }
+
+    .content .textbox {
+        max-width: 100%;
+    }
+
+    .content .textbox h1{
+        font-size: 6vw;
+    }
+    .content .textbox p{
+        font-size: 2.5vw;
+        margin-top: 30px;
+    }
+
+    .content .imgbox{
+        width: 100%;
+    }
+
+    .content .imgbox img{
+        width: 250px;
+    }
+
+    .circle{
+        bottom: 0;
+        clip-path: circle(900px at right 1500px);
+    }
+
+    .content .textbox a{
+        display: inline-block;
+        margin-top: 30px ;
+        padding: 20px 40px;
+        color: #fff;
+        background-color: #017143;
+        border-radius: 50px;
+        letter-spacing: 1px;
+        text-decoration: none;
+        font-size: 3.2vw;
+    }
+
+    .thumb1 li{
+
+        list-style: none;
+        display: inline-block;
+        margin: 0 20px;
+        cursor: pointer;
+        transition: 0.5s;
+        margin-top: 50px;
+    }
+    
+   
+    .thumb1{
+    position: absolute;
+    left: 50%;
+    bottom: 10%;
+    flex-direction: column;
+   align-items: end;
+    transform: translateX(-50%);
+    display: flex;
+    justify-content: left;
+
+ }
+
+.thumb1 li img{
+    width: 50px;
+    margin-top: 10px;
+    justify-content: left;
+    margin-left: 200px;
+}
+
+.sci{
+    background-color: #017143;
+    right: 0;
+    border-top-left-radius: 5px;
+    border-bottom-left-radius:5px ;
+    width: 40px;
+}
+
+.sci li a img{
+    width: 25px;
+    padding: 0  5px;
+ }
 }
